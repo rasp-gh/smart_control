@@ -1,4 +1,4 @@
-PROJECT_NAME           = "Smart Greenhouse Controller"
+PROJECT_NAME           = "Smart Controller"
 OUTPUT_DIRECTORY       = .
 INPUT                  = main.cpp src include
 RECURSIVE              = YES
