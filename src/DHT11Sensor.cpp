@@ -48,8 +48,8 @@ std::optional<float> DHT11Sensor::getHumidity()
 std::string DHT11Sensor::makeString()
 {
     std::stringstream ss;
-    ss << "Peak Hold Stats -> Temp: [" << min_temp << "C - " << max_temp 
-       << "C] | Hum: [" << min_hum << "% - " << max_hum << "%]";
+    ss << "Temp: [" << min_temp << "C - " << max_temp
+       << "C]<br>Hum: [" << min_hum << "% - " << max_hum << "%]";
     return ss.str();
 }
 
