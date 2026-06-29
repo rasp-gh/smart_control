@@ -1,19 +1,7 @@
-PROJECT_NAME           = "Smart Controller"
-PROJECT_NUMBER         = "1.0.0"
+PROJECT_NAME           = "Smart Greenhouse Controller"
 OUTPUT_DIRECTORY       = .
-OUTPUT_LANGUAGE        = English
-
-# Input instellingen (scant je nieuwe mappenstructuur)
 INPUT                  = main.cpp src include
 RECURSIVE              = YES
-
-# Schone output genereren
-EXTRACT_ALL            = NO
 GENERATE_HTML          = YES
 HTML_OUTPUT            = html
 GENERATE_LATEX         = NO
-
-# Optioneel: als je 'graphviz' hebt geïnstalleerd, maakt dit mooie diagrammen
-HAVE_DOT               = YES
-CLASS_GRAPH            = YES
-COLLABORATION_GRAPH    = YES

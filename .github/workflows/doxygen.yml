@@ -17,7 +17,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps: deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -29,7 +29,9 @@ jobs:
           sudo apt-get install -y doxygen graphviz
 
       - name: Generate Documentation
-        run: doxygen Doxyfile
+        run: |
+          mkdir -p html
+          doxygen Doxyfile
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
