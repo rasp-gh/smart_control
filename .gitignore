@@ -1,0 +1,14 @@
+# CMake tijdelijke bestanden en build output
+build/
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Doxygen gegenereerde HTML (dit bouwt GitHub straks zelf)
+html/
+latex/
+
+# OS specifieke rommel
+.DS_Store
